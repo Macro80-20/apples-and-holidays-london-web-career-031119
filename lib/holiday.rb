@@ -97,15 +97,8 @@ def all_holidays_with_bbq(holiday_hash)
        attribute
        end
      }
-   }.flatten.delete_if { |e| e==nil }
-array
+   }.flatten.delete_if { |e| e==nil } # i realised instead of assigning another variable the array and performing my methods . i could stick it on this ONE!
 #complete_array = array.flatten.delete_if { |e| e==nil }   #[[nil, nil], [:fourth_of_july], [nil], [:memorial_day]] so we flatten it and delete any nil values
-=begin 1st attempt
-  holiday.each do
-    |keys,value|
-  keys.to_s.split(" ").map { |chr| chr  } #> result: got: {:fall=>{:thanksgiving=>["Turkey"]}, :spring=>{:memorial_day=>["BBQ"]}, :summer=>{:fourth_of_july=>["Fireworks", "BBQ"]
-  end
-=end
 end
 
 all_holidays_with_bbq(holiday_h)
